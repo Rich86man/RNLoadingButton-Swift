@@ -341,6 +341,7 @@ open class RNLoadingButton: UIButton {
 
         case .left:
             // top,  left bottom right
+            frame.origin.x = titleLabel!.frame.origin.x - self.activityIndicatorView.frame.size.width - 5
             frame.origin.x += self.activityIndicatorEdgeInsets.left
             frame.origin.y += self.activityIndicatorEdgeInsets.top
 
